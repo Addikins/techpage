@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html>
-<header>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</header>
 
-<navbar id="navbar">
-    <a href="#main">Header 1</a>
-    <a>Header 2</a>
-    <a>Header 3</a>
-</navbar>
-<navbar id="nav-dropdown">
-    <a>Section Header 1</a>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugit repellat cumque sed nihil officiis ab,
-        ipsam sapiente, quisquam, voluptas dolorum adipisci est. Quisquam alias eos earum nulla aperiam repellendus.</p>
-    <a>Section Header 2</a>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nostrum eius quibusdam necessitatibus quas
-        distinctio eos, corrupti excepturi modi odit assumenda reprehenderit odio consequuntur rerum soluta, voluptate,
-        eveniet maxime beatae.</p>
-    <a>Section Header 3</a>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi? Amet alias quisquam pariatur sint
-        consectetur. Ex eum corrupti hic quo atque tempore ipsam quibusdam? Accusantium totam earum doloremque
-        molestiae?</p>
-    <a>Section Header 4</a>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, in. Veniam laudantium officia voluptatum autem
-        libero. Molestiae officiis vero doloremque fugiat, corrupti assumenda, nisi cupiditate aliquam illum explicabo
-        reiciendis dignissimos?</p>
-</navbar>
+<head>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+
+</head>
+
+<!--
+    <navbar id="navbar">
+        <a href="#main">Header 1</a>
+        <a>Header 2</a>
+        <a>Header 3</a>
+    </navbar>
+    <navbar id="nav-dropdown">
+        <a>Section Header 1</a>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi fugit repellat cumque sed nihil officiis ab,
+            ipsam sapiente, quisquam, voluptas dolorum adipisci est. Quisquam alias eos earum nulla aperiam repellendus.</p>
+            <a>Section Header 2</a>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nostrum eius quibusdam necessitatibus quas
+                distinctio eos, corrupti excepturi modi odit assumenda reprehenderit odio consequuntur rerum soluta, voluptate,
+                eveniet maxime beatae.</p>
+                <a>Section Header 3</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi? Amet alias quisquam pariatur sint
+                    consectetur. Ex eum corrupti hic quo atque tempore ipsam quibusdam? Accusantium totam earum doloremque
+                    molestiae?</p>
+                    <a>Section Header 4</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, in. Veniam laudantium officia voluptatum autem
+                        libero. Molestiae officiis vero doloremque fugiat, corrupti assumenda, nisi cupiditate aliquam illum explicabo
+                        reiciendis dignissimos?</p>
+                    </navbar>
+                -->
 
 <body>
-    <div id="main-doc">
-        <section class="main-section">
-            <header class="section-header">
-                Pew Pew 9000
-            </header>
-            <p>Placeholder text</p>
-        </section>
+    <div id="content">
+        
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
 
-        <section class="main-section">
-            <header class="section-header">
-                Block Breaker
-            </header>
-        </section>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="#">Home</a>
+            <a href="#">Game 1</a>
+            <a href="#">Game 2</a>
+            <a href="#">Portfolio</a>
+        </div>
+        
+        <h1>Tech Page</h1>
+        <!--<header class="section-header">
+                <section class="main-section">
+    Pew Pew 9000
+</header>
+<p>Placeholder text</p>
+</section>
 
-        <section class="main-section">
-            <header class="section-header">
+<section class="main-section">
+    <header class="section-header">
+        Block Breaker
+    </header>
+</section>
 
-            </header>
-        </section>
+<section class="main-section">
+    <header class="section-header">
 
+    </header>
+</section>
+-->
     </div>
 </body>
 <!--
