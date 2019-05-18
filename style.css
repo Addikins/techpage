@@ -56,6 +56,9 @@ text-align: center;
     overflow: hidden;
     width: 100%;
 }
+.small-hr {
+    width: 50%;
+}
 /*
 #navbar {
     display: grid;
@@ -104,11 +107,5 @@ text-align: center;
     width: 25%;
     justify-self: center;
     border: 2px solid black;
-}
-#content {
-    /*
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-self: center;
 }
 */
