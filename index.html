@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <script>
-        function openSlideMenu() {
-            document.getElementById('menu').style.width = '250px';
-            document.getElementById('main-doc').style.marginLeft = '250px';
-        }
-        function closeSlideMenu() {
-            document.getElementById('menu').style.width = '0px';
-            document.getElementById('main-doc').style.marginLeft = '0px';
-        }
-    </script>
-
-</head>
-
 <!--
     <navbar id="navbar">
         <a href="#main">Header 1</a>
@@ -44,51 +23,78 @@
                         reiciendis dignissimos?</p>
                     </navbar>
                 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+</head>
 
 <body>
-    <div id="main-doc">
-        
+    <main id="main-doc">
+
+        <div id="content">
+            
         <span class="slide">
             <a href="#" onclick="openSlideMenu()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </span>
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span>
+            
+            <div id="menu" class="navbar">
+                <a href="#" class="close" onclick="closeSlideMenu()">
+                        <i class="fas fa-times"></i>
+                    </a>
+                <nav id="navbar">
+                    
+                    <header>
+                        <p id="nav-description">Technical Documentation Page</p>
+                    </header>
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Game 1</a>
+                        <a href="#" class="nav-link">Game 2</a>
+                        <a href="http://adhemazzabi.com" target="_blank">Portfolio</a>
+                    </nav>
+                </div>
+                <hr id="home">
+                <h1>Tech Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt iusto nihil deserunt tempore amet. Nam minima repellendus culpa ratione non. Perspiciatis ratione nesciunt natus velit maiores cumque praesentium quaerat eum saepe dignissimos assumenda inventore obcaecati quia veritatis, neque consectetur. Animi soluta quisquam exercitationem iure mollitia sed dolore accusamus consectetur?</p>
 
-        <div id="menu" class="navbar">
-            <a href="#" class="close" onclick="closeSlideMenu()">
-                <i class="fas fa-times"></i>
-            </a>
-            <a href="#">Home</a>
-            <a href="#">Game 1</a>
-            <a href="#">Game 2</a>
-            <a href="http://adhemazzabi.com" target="_blank">Portfolio</a>
-        </div>
-        
-        <h1>Tech Page</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum incidunt iusto nihil deserunt tempore amet. Nam minima repellendus culpa ratione non. Perspiciatis ratione nesciunt natus velit maiores cumque praesentium quaerat eum saepe dignissimos assumenda inventore obcaecati quia veritatis, neque consectetur. Animi soluta quisquam exercitationem iure mollitia sed dolore accusamus consectetur?</p>
-        <!--<header class="section-header">
                 <section class="main-section">
-    Pew Pew 9000
-</header>
-<p>Placeholder text</p>
-</section>
+                    <header class="section-header">
+                    Home
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo quisquam minus amet commodi repellat eligendi ipsa, blanditiis nisi accusamus corrupti minima, magni iure cumque itaque cum ducimus sint quam.</p>
+                </section>
 
-<section class="main-section">
-    <header class="section-header">
-        Block Breaker
-    </header>
-</section>
+                <hr id="game1">
+                <section class="main-section">
+                    <header class="section-header">
+                        Pew Pew 9000
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, fuga in? A labore mollitia odit amet repellendus soluta sed! Veniam quis officiis deserunt enim reprehenderit rem perspiciatis cum nesciunt odio!</p>
+                </section>
 
-<section class="main-section">
-    <header class="section-header">
-
-    </header>
-</section>
--->
-    </div>
+                <hr id="game2">
+                <section class="main-section">
+                    <header class="section-header">
+                        Block Breaker
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, libero aperiam. Odit adipisci laboriosam excepturi cupiditate quidem! Vel porro est illo eaque sint ab explicabo laudantium perferendis. In, accusantium voluptate!</p>
+                </section>
+        </div>
+    </main>
 </body>
-<!--
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    -->
-
 </html>
